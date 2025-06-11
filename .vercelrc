@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cross-env NODE_OPTIONS='--max-old-space-size=4096' next build",
+  "devCommand": "cross-env NODE_OPTIONS='--max-old-space-size=4096' next dev",
+  "installCommand": "npm install",
+  "framework": "nextjs"
+}

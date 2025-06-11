@@ -2,17 +2,21 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   // Disable source maps in production to reduce memory usage
   productionBrowserSourceMaps: false,
   // Enable standalone output for better optimization
   output: 'standalone',
   // Configure server components external packages
-  experimental: {
-    serverComponentsExternalPackages: [],
-  },
+  serverExternalPackages: [],
   // Optimize package imports
   webpack: (config: any, { isServer }: any) => {
+    // Increase memory allocation for webpack
+    config.cache = false;
+    config.performance = {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000
+    };
     // Only run this optimization on the client build
     if (!isServer) {
       config.optimization.splitChunks = {
@@ -39,6 +43,8 @@ const nextConfig: NextConfig = {
     }
     return config;
   },
+  // Increase build timeout to 10 minutes
+  staticPageGenerationTimeout: 600,
 };
 
 export default nextConfig;
