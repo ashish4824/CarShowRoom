@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <!-- Executive Luxury Sedan -->
+  <rect width="800" height="400" fill="#f8f9fa" />
+  <g transform="translate(400, 200)">
+    <!-- Car body -->
+    <path d="M-280,-30 L-250,-30 L-220,-10 L220,-10 L260,20 L260,70 L-280,70 Z" fill="#0000FF" stroke="#333" stroke-width="2" class="car-body" />
+    
+    <!-- Car roof -->
+    <path d="M-150,-10 L-120,-60 L120,-60 L150,-10 Z" fill="#111" stroke="#333" stroke-width="2" />
+    
+    <!-- Windows -->
+    <path d="M-145,-10 L-115,-55 L115,-55 L145,-10 Z" fill="#87CEFA" stroke="#333" stroke-width="1" />
+    <line x1="-30" y1="-55" x2="-30" y2="-10" stroke="#333" stroke-width="1" />
+    <line x1="30" y1="-55" x2="30" y2="-10" stroke="#333" stroke-width="1" />
+    
+    <!-- Wheels -->
+    <circle cx="-180" cy="70" r="40" fill="#333" stroke="#000" stroke-width="2" />
+    <circle cx="-180" cy="70" r="25" fill="#777" stroke="#555" stroke-width="2" />
+    <circle cx="180" cy="70" r="40" fill="#333" stroke="#000" stroke-width="2" />
+    <circle cx="180" cy="70" r="25" fill="#777" stroke="#555" stroke-width="2" />
+    
+    <!-- Headlights -->
+    <rect x="-280" y="0" width="20" height="20" rx="5" fill="#FFF" stroke="#DDD" stroke-width="1" />
+    <rect x="250" y="10" width="10" height="20" rx="5" fill="#FF6347" stroke="#8B0000" stroke-width="1" />
+    
+    <!-- Grill -->
+    <rect x="-270" y="30" width="40" height="20" rx="5" fill="#333" stroke="#000" stroke-width="1" />
+    
+    <!-- Details -->
+    <path d="M-200,20 L200,20 L220,40 L-220,40 Z" fill="#111" stroke="#000" stroke-width="1" />
+    <rect x="-240" y="50" width="480" height="5" rx="2" fill="#111" />
+    
+    <!-- Luxury details -->
+    <rect x="-260" y="60" width="520" height="3" rx="1" fill="#CCC" />
+    <circle cx="0" cy="30" r="15" fill="none" stroke="#CCC" stroke-width="2" />
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="350" font-family="Arial" font-size="24" text-anchor="middle" fill="#333" font-weight="bold">Executive Luxury Sedan</text>
+</svg>

@@ -1,0 +1,168 @@
+/* Unity Component Styles */
+.unity-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.unity-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  color: white;
+}
+
+.loading-progress {
+  width: 80%;
+  height: 8px;
+  background-color: #333;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+.loading-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Car Showroom Styles */
+.car-showroom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.showroom-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.showroom-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #3498db, #2c3e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.showroom-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.car-viewer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.car-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.car-control-button {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.car-control-button:hover {
+  background-color: #e9ecef;
+}
+
+.car-control-button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.car-info-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.car-info-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.car-info-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.car-info-item {
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.car-info-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.car-info-value {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .car-showroom {
+    padding: 10px;
+  }
+  
+  .showroom-title {
+    font-size: 2rem;
+  }
+  
+  .car-info-details {
+    grid-template-columns: 1fr;
+  }
+}

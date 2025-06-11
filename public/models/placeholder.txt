@@ -1,0 +1,11 @@
+This directory will contain the 3D car model files in GLB format.
+
+In a real application, you would place the following GLB files here:
+- sport-coupe.glb
+- luxury-sedan.glb
+- electric-suv.glb
+
+These files would be downloaded from 3D model marketplaces like Sketchfab, CGTrader, or Clara.io.
+You can find free and paid 3D car models on these platforms and convert them to GLB format if needed.
+
+For now, the application will display a simplified 3D car model as a placeholder.
